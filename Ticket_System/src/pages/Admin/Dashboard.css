@@ -1,0 +1,20 @@
+.dashboard {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 40px 24px;
+  font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  color: #1A2233;
+}
+
+.dashboard h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0 0 4px;
+}
+
+.dashboard p {
+  font-size: 0.95rem;
+  color: #5C6B7A;
+  margin: 0 0 8px;
+  line-height: 1.5;
+}

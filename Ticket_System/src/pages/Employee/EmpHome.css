@@ -1,0 +1,27 @@
+.emp-home {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 40px 24px;
+  font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  color: #1A2233;
+}
+
+.emp-home h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0 0 4px;
+}
+
+.emp-home h2 {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #5C6B7A;
+  margin: 0 0 24px;
+}
+
+.emp-home p {
+  font-size: 0.95rem;
+  color: #1A2233;
+  margin: 0 0 8px;
+  line-height: 1.5;
+}

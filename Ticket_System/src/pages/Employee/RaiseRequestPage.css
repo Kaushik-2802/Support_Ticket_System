@@ -1,0 +1,200 @@
+.raise-request-page {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 40px 24px 80px;
+  font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  color: #1A2233;
+}
+
+.raise-request-page h1 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: 0 0 24px;
+}
+
+/* ===== Step indicator ===== */
+.step-indicator {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 32px;
+  border-bottom: 1px solid #E1E5EA;
+  padding-bottom: 0;
+}
+
+.step-indicator span {
+  flex: 1;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #A6AEB8;
+  padding-bottom: 12px;
+  border-bottom: 2px solid transparent;
+}
+
+.step-indicator span.active {
+  color: #2B3A55;
+  border-bottom-color: #2B3A55;
+}
+
+/* ===== Form step container ===== */
+.form-step {
+  background: #FFFFFF;
+  border: 1px solid #E1E5EA;
+  border-radius: 10px;
+  padding: 28px;
+}
+
+.form-step h2 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0 0 6px;
+}
+
+.form-step > p {
+  font-size: 0.9rem;
+  color: #5C6B7A;
+  margin: 0 0 20px;
+}
+
+.form-step > div {
+  margin-bottom: 18px;
+}
+
+.form-step label {
+  display: block;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #2B3A55;
+  margin-bottom: 6px;
+}
+
+.form-step input[type="text"],
+.form-step select,
+.form-step textarea {
+  width: 100%;
+  border: 1px solid #E1E5EA;
+  border-radius: 6px;
+  padding: 10px 12px;
+  font-size: 0.92rem;
+  color: #1A2233;
+  font-family: inherit;
+  outline: none;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.form-step textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.form-step input:focus,
+.form-step select:focus,
+.form-step textarea:focus {
+  border-color: #2B3A55;
+  box-shadow: 0 0 0 3px rgba(43, 58, 85, 0.12);
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.service-card {
+  border: 1px solid #E1E5EA;
+  border-radius: 8px;
+  padding: 14px 12px;
+  background: #FFFFFF;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #1A2233;
+  cursor: pointer;
+  text-align: left;
+  transition: border-color 0.15s ease, background-color 0.15s ease;
+}
+
+.service-card:hover {
+  border-color: #2B3A55;
+}
+
+.service-card.selected {
+  border-color: #2B3A55;
+  background: #EEF1F6;
+  font-weight: 600;
+}
+
+.navigation-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 24px;
+}
+
+.navigation-buttons button {
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.navigation-buttons button:first-child {
+  background: transparent;
+  color: #5C6B7A;
+  border: 1px solid #E1E5EA;
+}
+
+.navigation-buttons button:last-child {
+  background: #2B3A55;
+  color: #FFFFFF;
+}
+
+.navigation-buttons button:disabled {
+  background: #A6AEB8;
+  color: #FFFFFF;
+  cursor: not-allowed;
+}
+
+/* ===== Confirmation summary ===== */
+.confirmation-summary p {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  padding: 10px 0;
+  border-bottom: 1px solid #F0F2F5;
+  margin: 0;
+}
+
+.confirmation-summary p:last-of-type {
+  border-bottom: none;
+}
+
+.confirmation-summary strong {
+  color: #5C6B7A;
+  font-weight: 500;
+}
+
+/* ===== Success step ===== */
+.success-step {
+  text-align: center;
+}
+
+.success-step h2 {
+  color: #3E7C6F;
+}
+
+.success-step h3 {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 1rem;
+  background: #F0F2F5;
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 6px;
+  margin: 12px 0 24px;
+}
+
+.success-step .navigation-buttons {
+  justify-content: center;
+}

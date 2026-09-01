@@ -1,0 +1,122 @@
+.landing-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 56px;
+  background: #F7F8FA;
+  font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  padding: 48px 24px;
+}
+
+.landing-header {
+  text-align: center;
+  max-width: 480px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.landing-header h1 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #5C6B7A;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin: 0;
+}
+
+.landing-header h2 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #1A2233;
+  letter-spacing: -0.01em;
+  margin: 4px 0 0;
+}
+
+.landing-header p {
+  font-size: 1rem;
+  color: #5C6B7A;
+  line-height: 1.5;
+  margin: 0 0 8px;
+}
+
+.admin-section {
+  background: #FFFFFF;
+  border: 1px solid #E1E5EA;
+  border-radius: 10px;
+  padding: 24px 32px;
+  text-align: center;
+  max-width: 360px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.admin-section h3 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #1A2233;
+  margin: 0;
+}
+
+.admin-section p {
+  font-size: 0.88rem;
+  color: #5C6B7A;
+  line-height: 1.5;
+  margin: 0 0 8px;
+}
+
+.btn-primary,
+.btn-secondary {
+  border: none;
+  border-radius: 6px;
+  padding: 12px 24px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.btn-primary {
+  background: #2B3A55;
+  color: #FFFFFF;
+}
+
+.btn-primary:hover {
+  background: #22304A;
+}
+
+.btn-primary:focus-visible {
+  outline: 2px solid #3E7C6F;
+  outline-offset: 2px;
+}
+
+.btn-secondary {
+  background: transparent;
+  color: #2B3A55;
+  border: 1px solid #E1E5EA;
+  padding: 10px 20px;
+  font-size: 0.88rem;
+}
+
+.btn-secondary:hover {
+  border-color: #2B3A55;
+}
+
+.btn-secondary:focus-visible {
+  outline: 2px solid #3E7C6F;
+  outline-offset: 2px;
+}
+
+@media (max-width: 480px) {
+  .landing-page {
+    gap: 40px;
+  }
+  .admin-section {
+    padding: 20px 24px;
+  }
+}

@@ -1,0 +1,58 @@
+.emp-navbar {
+  background: #2B3A55;
+  padding: 0 32px;
+  font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+.emp-navbar ul {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.emp-navbar li {
+  display: flex;
+}
+
+.emp-navbar a {
+  display: inline-block;
+  color: #C7CEDA;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 16px 14px;
+  border-bottom: 2px solid transparent;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.emp-navbar a:hover {
+  color: #FFFFFF;
+}
+
+.emp-navbar a:focus-visible {
+  outline: 2px solid #3E7C6F;
+  outline-offset: 2px;
+}
+
+.emp-navbar a.active {
+  color: #FFFFFF;
+  border-bottom-color: #3E7C6F;
+}
+
+@media (max-width: 640px) {
+  .emp-navbar ul {
+    overflow-x: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .emp-navbar ul::-webkit-scrollbar {
+    display: none;
+  }
+  .emp-navbar a {
+    padding: 14px 10px;
+    white-space: nowrap;
+  }
+}
