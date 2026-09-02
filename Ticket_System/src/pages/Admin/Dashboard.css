@@ -18,3 +18,112 @@
   margin: 0 0 8px;
   line-height: 1.5;
 }
+
+.filter-toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.date-filters {
+    display: inline-flex;
+    background: #eef0f3;
+    border-radius: 10px;
+    padding: 4px;
+    gap: 2px;
+}
+
+.date-filter {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 7px 14px;
+    border: none;
+    border-radius: 7px;
+    background: transparent;
+    color: #5b6472;
+    font-size: 0.88rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.15s ease, color 0.15s ease;
+}
+
+.date-filter:hover {
+    color: #1f2937;
+}
+
+.date-filter.active {
+    background: #1f2937;
+    color: #fff;
+}
+
+.cal-icon {
+    flex-shrink: 0;
+}
+
+.custom-date-range {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: #fff;
+    border: 1px solid #dfe2e7;
+    border-radius: 10px;
+    padding: 6px 12px;
+    animation: reveal 0.15s ease;
+}
+
+.custom-date-range label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.82rem;
+    color: #5b6472;
+}
+
+.custom-date-range input[type="date"] {
+    border: none;
+    font-size: 0.85rem;
+    color: #1f2937;
+    background: transparent;
+    padding: 2px 0;
+}
+
+.custom-date-range input[type="date"]:focus-visible {
+    outline: 2px solid #1f2937;
+    outline-offset: 2px;
+    border-radius: 4px;
+}
+
+.range-sep {
+    color: #b6bcc4;
+}
+
+.clear-range {
+    border: none;
+    background: none;
+    color: #b6483a;
+    font-size: 0.82rem;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 2px 4px;
+}
+
+.clear-range:hover {
+    text-decoration: underline;
+}
+
+@keyframes reveal {
+    from { opacity: 0; transform: translateY(-2px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .custom-date-range { animation: none; }
+}
+
+@media (max-width: 640px) {
+    .date-filters { flex-wrap: wrap; }
+    .custom-date-range { flex-wrap: wrap; }
+}

@@ -18,7 +18,7 @@ export const getTickets= createAsyncThunk("tickets/getTickets",
     async(_,{rejectWithValue})=>{
     try{
         const response= await api.get("/tickets");
-        return response.data.tickets;
+        return response.data;
     }catch(err){
     return rejectWithValue(err.response?.data?.message || "Error fetching tickets");
     }
